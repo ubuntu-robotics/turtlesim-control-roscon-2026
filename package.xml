@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>turtlesim_control_roscon_2026</name>
+  <version>0.1.0</version>
+  <description>Simple ROS 2 Jazzy Python node that drives turtlesim in a square.</description>
+  <maintainer email="guillaume.beuzeboc@canonical.com">Guillaume beuzeboc</maintainer>
+  <license>Apache-2.0</license>
+
+  <buildtool_depend>ament_python</buildtool_depend>
+
+  <depend>rclpy</depend>
+  <depend>geometry_msgs</depend>
+  <depend>turtlesim</depend>
+
+  <test_depend>ament_lint_auto</test_depend>
+  <test_depend>ament_lint_common</test_depend>
+
+  <export>
+    <build_type>ament_python</build_type>
+  </export>
+</package>
