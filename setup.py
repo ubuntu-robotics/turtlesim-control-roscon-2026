@@ -16,7 +16,6 @@ setup(
     maintainer_email='guillaume.beuzeboc@canonical.com',
     description='Simple ROS 2 Jazzy Python node that drives turtlesim in a square.',
     license='Apache-2.0',
-    tests_require=['pytest'],
     entry_points={
         'console_scripts': [
             'draw_square = turtlesim_control_roscon_2026.draw_square:main',
