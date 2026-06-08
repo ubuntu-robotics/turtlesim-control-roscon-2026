@@ -32,7 +32,8 @@ class SquareController:
             self.turn_start_theta = theta
 
         turned = abs(self.normalize_angle(theta - self.turn_start_theta))
-        if turned < (math.pi / 2.0):
+        # we turn 45 deg, or do we?
+        if turned < (math.pi / 4.0):
             return (0.0, 1.0)
 
         self.state = 'move'

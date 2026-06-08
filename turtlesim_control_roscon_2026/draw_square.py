@@ -14,7 +14,7 @@ class DrawSquareNode(Node):
 
         self.cmd_pub = self.create_publisher(Twist, '/turtle1/cmd_vel', 10)
         self.pose_sub = self.create_subscription(Pose, '/turtle1/pose', self.pose_callback, 10)
-        self.timer = self.create_timer(0.05, self.control_loop)
+        self.timer = self.create_timer(0.001, self.control_loop)
 
         self.current_pose: Pose | None = None
         self.controller = SquareController(side_length=2.0)
